@@ -34,3 +34,14 @@ li a {
 li a:hover:not(.active) {
   background-color: #ddd;
 }
+
+/* Pocision de la imagen */
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
