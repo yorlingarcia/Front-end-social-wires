@@ -35,13 +35,24 @@ li a:hover:not(.active) {
   background-color: #ddd;
 }
 
-/* Pocision de la imagen */
+/* Pocision de la imagen*/
 .logo {
   text-align: center;
+  background: linear-gradient(var(--white), var(--black));
+  /* background-color: #1a2230; */
+  margin: 0 100px;
+  height: 100hv;
 }
 
 .logo img {
-  object-fit: cover;
-  max-width: 100%;
+  /* object-fit: cover; */
+  max-width: 98%;
   height: auto;
+}
+
+/* centrado del texto */
+.logo p {
+  font-size: 50px;
+  color: var(--white);
+  font-weight: bold;
 }
