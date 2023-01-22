@@ -85,8 +85,9 @@ form {
   margin-bottom: 15px;
 }
 #boton {
-  width: 100%;
+  width: 80%;
   height: auto;
+  border: none;
   border-radius: 20px;
   font-size: 30px;
   font-weight: bold;
