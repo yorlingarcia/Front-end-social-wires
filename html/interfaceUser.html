@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../css/styles-interface.css" />
+    <title>Interface - Social Wires</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <ul>
+          <li style="float: left" class="navbar-logo">
+            <img src="./../images/bitmap.png" alt="logo" />
+          </li>
+          <li class="navbar-message">
+            <img
+              src="./../images/message-square-svgrepo-com.svg"
+              alt="message"
+            />
+            <div>2</div>
+          </li>
+          <li class="navbar-menu">
+            <img
+              src="./../images/menu-svgrepo-com.svg"
+              alt="menu"
+              class="menu"
+            />
+          </li>
+        </ul>
+      </div>
+
+      <div class="desktop-menu inactive">
+        <ul>
+          <li>
+            <a href="/" class="title">My orders</a>
+          </li>
+
+          <li>
+            <a href="/">My account</a>
+          </li>
+
+          <li>
+            <a href="/">Sign out</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div>
+      <h2>Create message</h2>
+      <form action="">
+        <label for="title">Title message</label>
+        <input type="text" id="title" />
+        <label for="message">Messsages</label>
+        <textarea
+          id="message"
+          placeholder="Enter your coomment here..."
+        ></textarea>
+      </form>
+      <div>
+        <button>share</button>
+      </div>
+    </div>
+  </body>
+  <script src="./../script/index.js"></script>
+</html>
