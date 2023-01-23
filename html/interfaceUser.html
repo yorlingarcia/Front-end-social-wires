@@ -8,29 +8,16 @@
     <title>Interface - Social Wires</title>
   </head>
   <body>
-    <nav>
-      <div class="navbar">
-        <ul>
-          <li style="float: left" class="navbar-logo">
-            <img src="./../images/bitmap.png" alt="logo" />
-          </li>
-          <li class="navbar-message">
-            <img
-              src="./../images/message-square-svgrepo-com.svg"
-              alt="message"
-            />
-            <div>2</div>
-          </li>
-          <li class="navbar-menu">
-            <img
-              src="./../images/menu-svgrepo-com.svg"
-              alt="menu"
-              class="menu"
-            />
-          </li>
-        </ul>
+    <div class="navbar">
+      <div class="logo">
+        <img src="./../images/bitmap.png" alt="logo" />
       </div>
-
+      <div class="message-menu">
+        <img src="./../images/message-square-svgrepo-com.svg" alt="message" />
+        <img src="./../images/menu-svgrepo-com.svg" alt="menu" class="menu" />
+      </div>
+    </div>
+    <nav>
       <div class="desktop-menu inactive">
         <ul>
           <li>
@@ -47,9 +34,9 @@
         </ul>
       </div>
     </nav>
-    <div>
+    <div class="cuerpo">
       <h2>Create message</h2>
-      <form action="">
+      <form>
         <label for="title">Title message</label>
         <input type="text" id="title" />
         <label for="message">Messsages</label>
