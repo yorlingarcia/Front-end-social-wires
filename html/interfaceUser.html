@@ -38,7 +38,7 @@
             <a><p>Nombre</p></a>
           </li>
           <li>
-            <a
+            <a id="createMessage"
               ><img
                 src="./../images/create.svg"
                 alt="crear mensaje"
@@ -49,7 +49,7 @@
           </li>
 
           <li>
-            <a
+            <a id="myMessage"
               ><img
                 src="./../images/icon-sent.png"
                 alt="mensajes enviados"
@@ -60,7 +60,7 @@
           </li>
 
           <li>
-            <a
+            <a id="seeAllMessages"
               ><img
                 src="./../images/icon-chat.png"
                 alt="mensajes"
@@ -70,7 +70,7 @@
             >
           </li>
           <li>
-            <a
+            <a href="#" id="logout"
               ><img src="./../images/logout.svg" alt="salida" class="altura" />
               <p>Logout</p></a
             >
@@ -78,7 +78,7 @@
         </ul>
       </div>
     </nav>
-    <div class="cuerpo inactive-createMessage">
+    <div class="cuerpo inactive-createMessage" id="desktopCreateMessage">
       <h2>Create message</h2>
       <form>
         <label for="title">Title message</label>
@@ -93,7 +93,7 @@
         <button>share</button>
       </div>
     </div>
-    <div class="cuerpo inactive-messages">
+    <div class="cuerpo inactive-myMessages" id="desktopMyMessage">
       <h2>My messages</h2>
       <form>
         <label for="dateSelector">Date select</label>
@@ -104,7 +104,7 @@
         </select>
       </form>
     </div>
-    <div class="cuerpo inactive-allMessages">
+    <div class="cuerpo inactive-seeAllMessages" id="desktopSeeAllMessage">
       <h2>All Messages</h2>
       <form>
         <label for="filter">What search?</label>
