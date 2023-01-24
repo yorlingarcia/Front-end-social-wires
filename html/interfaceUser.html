@@ -96,8 +96,21 @@
     <div class="cuerpo inactive-messages">
       <h2>My messages</h2>
       <form>
-        <label for="title">Date select</label>
-        <input type="date" id="title" />
+        <label for="dateSelector">Date select</label>
+        <select id="dateSelector">
+          <option value="au">Australia</option>
+          <option value="ca">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </form>
+    </div>
+    <div class="cuerpo inactive-allMessages">
+      <h2>All Messages</h2>
+      <form>
+        <label for="filter">What search?</label>
+        <input type="search" id="filter" placeholder="Search.." />
+        <label for="dateSelect">Date select</label>
+        <input type="date" id="dateSelect" />
       </form>
     </div>
   </body>
