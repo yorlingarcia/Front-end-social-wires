@@ -55,9 +55,53 @@ header ul li a:hover:not(.active) {
 }
 
 /* parte inactiva no mostrada */
+.desktop-menu {
+  background-color: var(--white);
+  color: #16202a;
+}
 
-.inactive {
-  display: none;
+/* Menu en desktop */
+.desktop-menu {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  width: 220px;
+  height: auto;
+  border-radius: 6px;
+}
+.desktop-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+.desktop-menu ul li {
+  text-align: start;
+}
+
+.desktop-menu ul li a {
+  color: var(--back);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  max-width: 210px;
+  padding-left: 10px;
+  z-index: 0;
+}
+
+.desktop-menu ul li a p {
+  padding-left: 15px;
+}
+
+.desktop-menu ul li a:hover {
+  background-color: #f9fd6d;
+  border-radius: 6px;
+}
+
+.altura {
+  width: auto;
+  height: 30px;
 }
 
 /* cuerpo principal del documento */
