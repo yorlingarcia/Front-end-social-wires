@@ -55,6 +55,10 @@ header ul li a:hover:not(.active) {
 }
 
 /* parte inactiva no mostrada */
+.inactive {
+  display: none;
+}
+
 .desktop-menu {
   background-color: var(--white);
   color: #16202a;
