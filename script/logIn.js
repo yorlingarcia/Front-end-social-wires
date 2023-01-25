@@ -17,13 +17,19 @@ const password = document.getElementById("password");
 btnSignIn.addEventListener("click", validation);
 
 function validation() {
-  let user = users.filter((element) => element.email == email.value);
+  let user = users.find((element) => element.email == email.value);
+  console.log(password.value);
+  console.log(user);
   if (user) {
-    if (user[0].password == password.value) {
+    let usuario = users.filter((element) => element.email == email.value);
+    if (usuario[0].password == password.value) {
       window.location.href = "./../html/interfaceUser.html";
       localStorage.setItem("record_user", user[0].name);
     } else {
-      window.alert("Usuario o contraseña incorrecta");
+      window.alert("Contraseña incorrecta");
+      console.log("password");
     }
+  } else {
+    window.alert("El usuario no existe");
   }
 }
