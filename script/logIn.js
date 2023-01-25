@@ -26,9 +26,9 @@ function validation() {
       localStorage.setItem("record_usuario", usuario[0].name);
       window.location.href = "./../html/interfaceUser.html";
     } else {
-      window.alert("Contraseña incorrecta");
+      window.alert("Usuario o contraseña incorrecta");
     }
   } else {
-    window.alert("El usuario no existe");
+    window.alert("Usuario o contraseña incorrecta");
   }
 }
