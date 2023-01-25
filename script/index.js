@@ -4,22 +4,44 @@ const createMessage = document.querySelector("#createMessage");
 const desktopCreateMessage = document.querySelector("#desktopCreateMessage");
 const myMessage = document.querySelector("#myMessage");
 const desktopMyMessage = document.querySelector("#desktopMyMessage");
-const seeAllMessage = document.querySelector("#seeAllMessage");
-const desktopSeeAllMessage = document.querySelector("#desktopSeeAllMessage");
+const seeAllMessage = document.querySelector("#seeAllMessages");
+const desktopSeeAllMessages = document.querySelector("#desktopSeeAllMessages");
 
+// inicializacion de tags para mostrar la forma inicial y definir valores
+desktopCreateMessage.style.display = "block";
+desktopMyMessage.style.display = "none";
+desktopSeeAllMessages.style.display = "none";
+
+// Escuchar el evento
 menu.addEventListener("click", toggleDesktopMenu);
 createMessage.addEventListener("click", toggleDesktopCreateMessage);
+myMessage.addEventListener("click", toggleDesktopMyMessage);
+seeAllMessage.addEventListener("click", toggleDesktopSeeAllMessage);
 
 function toggleDesktopMenu() {
   desktopMenu.classList.toggle("inactive");
 }
 
 function toggleDesktopCreateMessage() {
-  if (!desktopCreateMessage.classList.toggle("inactive-createMessage")) {
-    console.log("existe");
-    document.getElementById("desktopCreateMessage").style.display = "none";
-  } else {
-    console.log("No exsite");
-    document.getElementById("desktopCreateMessage").style.display = "block";
+  if (desktopCreateMessage.style.display == "none") {
+    desktopCreateMessage.style.display = "block";
+    desktopMyMessage.style.display = "none";
+    desktopSeeAllMessages.style.display = "none";
+  }
+}
+
+function toggleDesktopMyMessage() {
+  if (desktopMyMessage.style.display == "none") {
+    desktopMyMessage.style.display = "block";
+    desktopCreateMessage.style.display = "none";
+    desktopSeeAllMessages.style.display = "none";
+  }
+}
+
+function toggleDesktopSeeAllMessage() {
+  if (desktopSeeAllMessages.style.display == "none") {
+    desktopSeeAllMessages.style.display = "block";
+    desktopCreateMessage.style.display = "none";
+    desktopMyMessage.style.display = "none";
   }
 }

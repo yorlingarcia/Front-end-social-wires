@@ -59,13 +59,6 @@ header ul li a:hover:not(.active) {
   display: none;
 }
 
-.inactive-myMessages {
-  display: none;
-}
-.inactive-seeAllMessages {
-  display: none;
-}
-
 .desktop-menu {
   background-color: var(--white);
   color: #16202a;
