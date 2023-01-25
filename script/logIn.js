@@ -27,7 +27,6 @@ function validation() {
       localStorage.setItem("record_user", user[0].name);
     } else {
       window.alert("Contraseña incorrecta");
-      console.log("password");
     }
   } else {
     window.alert("El usuario no existe");
