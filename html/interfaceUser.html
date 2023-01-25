@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../css/styles-interface.css" />
+    <title>Interface - Social Wires</title>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li style="float: left" class="navbar-logo">
+          <a><img src="./../images/bitmap.png" alt="logo" class="logo" /></a>
+        </li>
+
+        <li class="message-menu">
+          <a
+            ><img
+              src="./../images/menu-svgrepo-com.svg"
+              alt="menu"
+              class="menu"
+          /></a>
+        </li>
+        <li class="message-menu">
+          <a
+            ><img
+              src="./../images/message-square-svgrepo-com.svg"
+              alt="message"
+          /></a>
+        </li>
+      </ul>
+    </header>
+    <nav>
+      <div class="desktop-menu inactive">
+        <ul>
+          <li>
+            <a><p id="nombre">Nombre</p></a>
+          </li>
+          <li>
+            <a id="createMessage"
+              ><img
+                src="./../images/create.svg"
+                alt="crear mensaje"
+                class="altura"
+              />
+              <p>Create Messages</p></a
+            >
+          </li>
+
+          <li>
+            <a id="myMessage"
+              ><img
+                src="./../images/icon-sent.png"
+                alt="mensajes enviados"
+                class="altura"
+              />
+              <p>My Messages</p></a
+            >
+          </li>
+
+          <li>
+            <a id="seeAllMessages"
+              ><img
+                src="./../images/icon-chat.png"
+                alt="mensajes"
+                class="altura"
+              />
+              <p>See all messages</p></a
+            >
+          </li>
+          <li>
+            <a href="./../html/logIn.html" id="logout"
+              ><img src="./../images/logout.svg" alt="salida" class="altura" />
+              <p>Logout</p></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="cuerpo" id="desktopCreateMessage">
+      <h2>Create message</h2>
+      <form>
+        <label for="title">Title message</label>
+        <input type="text" id="title" />
+        <label for="message">Messsages</label>
+        <textarea
+          id="message"
+          placeholder="Enter your coomment here..."
+        ></textarea>
+      </form>
+      <div>
+        <button>share</button>
+      </div>
+    </div>
+    <div class="cuerpo" id="desktopMyMessage">
+      <h2>My messages</h2>
+      <form>
+        <label for="dateSelector">Date select</label>
+        <select id="dateSelector">
+          <option value="au">Australia</option>
+          <option value="ca">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </form>
+    </div>
+    <div class="cuerpo" id="desktopSeeAllMessages">
+      <h2>All Messages</h2>
+      <form>
+        <label for="filter">What search?</label>
+        <input type="search" id="filter" placeholder="Search.." />
+        <label for="dateSelect">Date select</label>
+        <input type="date" id="dateSelect" />
+      </form>
+    </div>
+  </body>
+  <script src="./../script/interface.js"></script>
+</html>
