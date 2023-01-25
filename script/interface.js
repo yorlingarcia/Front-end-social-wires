@@ -6,6 +6,7 @@ const myMessage = document.querySelector("#myMessage");
 const desktopMyMessage = document.querySelector("#desktopMyMessage");
 const seeAllMessage = document.querySelector("#seeAllMessages");
 const desktopSeeAllMessages = document.querySelector("#desktopSeeAllMessages");
+const user = document.getElementById("nombre");
 
 // inicializacion de tags para mostrar la forma inicial y definir valores
 desktopCreateMessage.style.display = "block";
@@ -45,3 +46,5 @@ function toggleDesktopSeeAllMessage() {
     desktopMyMessage.style.display = "none";
   }
 }
+
+user.innerHTML = localStorage.getItem("record_user");

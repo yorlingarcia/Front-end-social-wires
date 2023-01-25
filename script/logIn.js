@@ -21,6 +21,7 @@ function validation() {
   if (user) {
     if (user[0].password == password.value) {
       window.location.href = "./../html/interfaceUser.html";
+      localStorage.setItem("record_user", user[0].name);
     } else {
       window.alert("Usuario o contraseña incorrecta");
     }
