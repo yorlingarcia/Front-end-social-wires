@@ -24,7 +24,7 @@ function validation() {
     let usuario = users.filter((element) => element.email == email.value);
     if (usuario[0].password == password.value) {
       window.location.href = "./../html/interfaceUser.html";
-      localStorage.setItem("record_user", user[0].name);
+      localStorage.setItem("record_usuario", user[0].name);
     } else {
       window.alert("Contraseña incorrecta");
     }
