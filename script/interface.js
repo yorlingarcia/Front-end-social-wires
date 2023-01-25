@@ -47,4 +47,4 @@ function toggleDesktopSeeAllMessage() {
   }
 }
 
-user.innerHTML = localStorage.getItem("record_user");
+user.innerHTML = localStorage.getItem("record_usuario");
